@@ -1,0 +1,200 @@
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+}
+
+body {
+  background: #00b2ee;
+}
+
+.header {
+  height: 80px;
+}
+
+.header-title {
+  font-size: 36px;
+  padding: 15px 15px;
+}
+
+.main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: calc(100% - 140px);
+}
+
+.main-content {
+  background: #ffffff;
+  padding: 20px 45px;
+  box-shadow: 6px 6px 32px -24px;
+  max-width: 500px;
+}
+
+.main-content-title {
+  font-size: 36px;
+  margin-bottom: 5px;
+  text-align: center;
+}
+
+.main-content-auth {
+  color: #00b2ee;
+  font-style: italic;
+  text-align: right;
+  display: block;
+  text-decoration: none;
+}
+
+.disk {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 3px solid #00b2ee;
+  margin: 10px 0;
+}
+
+.disk-left-img {
+  border-right: 3px solid #00b2ee;
+  text-align: center;
+}
+
+.disk-left-img img {
+  width: 165px;
+}
+
+.body-form-input {
+  display: block;
+  outline: none;
+  margin-bottom: 5px;
+  margin-top: 5px;
+  border-radius: 40px;
+  border: 2px solid grey;
+  padding: 5px 8px;
+}
+
+.disk-right-content {
+  padding: 5px 10px;
+}
+
+.disk-title {
+  font-size: 32px;
+  margin-bottom: 8px;
+}
+
+.disk-author, .disk-genre, .disk-date {
+  color: grey;
+  font-style: italic;
+}
+
+.disk-buttons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.disk-button {
+  outline: none;
+  border-radius: 40px;
+  border: none;
+  background: #00b2ee;
+  padding: 6px 12px;
+  color: #ffffff;
+  cursor: pointer;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+.disk-button-a {
+  outline: none;
+  border-radius: 40px;
+  border: none;
+  background: #00b2ee;
+  padding: 6px 12px;
+  color: #ffffff;
+  cursor: pointer;
+  text-decoration: none;
+  margin: 15px 5px;
+}
+
+.disk-button:hover, .disk-button-a:hover {
+  background: #007096;
+  transition: .3s;
+}
+
+.footer {
+  text-align: center;
+  height: 50px;
+  font-size: 20px;
+}
+
+.footer-title {
+  margin-top: 10px;
+}
+
+.body-form-login {
+  padding: 0 50px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+@media screen and (max-width: 580px) {
+  .disk {
+    flex-direction: column;
+  }
+  .disk-left-img {
+    border: none;
+    border-bottom: 3px solid #00b2ee;
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 360px) {
+  .main-content {
+    max-width: 315px;
+    padding: 20px 15px;
+  }
+}
+
+.pagination {
+  display: flex;
+  list-style-type: none;
+  justify-content: center;
+  align-items: center;
+  margin-left: 0;
+  padding-left: 0;
+}
+
+.page-item {
+  background: #00b2ee;
+  padding: 5px 8px;
+  font-size: 18px;
+  margin: 0 8px;
+  text-decoration: none;
+}
+
+.page-item.active {
+  color: #ffffff;
+  background: #00d8ee;
+}
+
+.page-item a {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.errors {
+  position: relative;
+  padding: .75rem 1.25rem;
+  border: 1px solid transparent;
+  border-radius: .25rem;
+  color: #721c24;
+  background-color: #f8d7da;
+  border-color: #f5c6cb;
+}
